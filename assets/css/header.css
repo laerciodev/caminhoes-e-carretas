@@ -8,18 +8,26 @@ a {
 }
 
 .header {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    
+    .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
 }
 
 .logo {
-    float: left;
     margin-right: 10px;
 }
 
 .button-login,
 .button-anuncie {
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +40,13 @@ a {
     cursor: pointer;
 }
 
+@media(min-width: 768px) {
+    .button-login,
+    .button-anuncie {
+        margin: 5px;
+    }
+}
+
 .button-login-icon {
     fill: #fff;
     width: 20px;
@@ -40,12 +55,7 @@ a {
 
 .button-login {
     background-color: #002c5a;
-    transition: background-color .3s ease-in-out;
     margin-bottom: 5px;
-}
-
-.button-login:hover {
-    background-color:#003771;
 }
 
 .button-anuncie {
@@ -53,9 +63,21 @@ a {
     color: #002c5a;
 }
 
-.button-anuncie:hover {
-    background-color: #efc400;
-    transition: background-color .3s ease-in-out;
+@media(min-width: 768px) {
+   
+    .button-login {
+        transition: background-color .3s ease-in-out;
+    }
+
+    .button-anuncie:hover {
+        background-color: #efc400;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .button-login:hover {
+        background-color:#003771;
+    }
+    
 }
 
 .button-anuncie-icon {

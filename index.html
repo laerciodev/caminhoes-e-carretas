@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/busca-veiculo.css">
 </head>
 <body>
     <!-- header -->
@@ -58,6 +59,9 @@
         </header>
         
         <!-- Menu -->
+        <input type="checkbox" id="button-menu">
+        <label for="button-menu">&#9776; Menu</label>
+
         <nav class="menu">
             <ul class="menu-list">
                 <li class="menu-item">Home</li>
@@ -71,5 +75,44 @@
                 <li class="menu-item">Anuncie</li>
             </ul>
         </nav>
+
+        <!-- Section #busca-veiculo -->
+        <section id="busca-veiculo">
+            <fieldset class="fieldset">
+                <select class="select -marca" name="" id="">
+                    <option value="" selected>(Todos os tipos)</option>
+                    <option value="">Caminhão</option>
+                    <option value="">Carreta</option>
+                    <option value="">Sobre Chassi e Carroceria</option>
+                    <option value="">Micro Ônibus</option>
+                    <option value="">Ônibus</option>
+                    <option value="">Utilitários</option>
+                </select>
+
+                <select class="select -tipo" name="" id="">
+                    <option value="" selected>(Todos os tipos)</option>
+                    <option value="">Caminhão</option>
+                    <option value="">Carreta</option>
+                    <option value="">Sobre Chassi e Carroceria</option>
+                    <option value="">Micro Ônibus</option>
+                    <option value="">Ônibus</option>
+                    <option value="">Utilitários</option>
+                </select>
+
+                <select class="select -modelo" name="" id="">
+                    <option value="" selected>(Todos os tipos)</option>
+                    <option value="">Caminhão</option>
+                    <option value="">Carreta</option>
+                    <option value="">Sobre Chassi e Carroceria</option>
+                    <option value="">Micro Ônibus</option>
+                    <option value="">Ônibus</option>
+                    <option value="">Utilitários</option>
+                </select>
+
+
+            </fieldset>
+            
+        </section>
+
 </body>
 </html>
